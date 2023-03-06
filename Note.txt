@@ -12,5 +12,20 @@ To create table:
  To insert:
  ==========
  insert into job(jobName,exp)values('Node JS Developer', '2years');
- 
+ const sql = "INSERT into job(jobName,exp) values('" +
+      jobName +
+      "','" +
+      exp +
+      "')";
+ To update:
+ ==========
+ update job set exp="3years" where jobId=1;
+  const sql = await "UPDATE job set jobName=?, exp=? where jobId=?";
+ To delete:
+ =========
+ DELETE from job where jobId = ?
+ join:
+ =====
+const sql = await "select product.id,product.name,product.quantity,product.departments, review.reviewID,review.stars,review.review from product inner join review on review.id=product.id";
+
 
