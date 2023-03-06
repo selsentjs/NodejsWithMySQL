@@ -1,0 +1,8 @@
+To create database:
+====================
+create database JobSearcher;
+
+To use database:
+================
+use database;
+
