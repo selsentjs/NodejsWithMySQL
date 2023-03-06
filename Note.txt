@@ -6,3 +6,11 @@ To use database:
 ================
 use database;
 
+To create table:
+==================
+ create table job(jobId int not null auto_increment, jobName varchar(30) not null, exp varchar(20) not null, primary key(jobId));
+ To insert:
+ ==========
+ insert into job(jobName,exp)values('Node JS Developer', '2years');
+ 
+

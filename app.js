@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require("express");
 const jobsRoute = require('./route/jobsRoute')
+require('./database/connection');
 const app = express();
 
 app.use(express.json());
